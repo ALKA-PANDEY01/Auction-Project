@@ -1,8 +1,23 @@
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
     DATABASE_URL: str
+
+    @field_validator("DATABASE_URL", mode="before")
+    @classmethod
+    def normalize_postgres_url(cls, value: str) -> str:
+        if isinstance(value, str):
+            for prefix in (
+                "postgres://",
+                "postgresql://",
+                "postgresql+psycopg://",
+                "postgresql+psycopg2://",
+            ):
+                if value.startswith(prefix):
+                    return "postgresql+asyncpg://" + value[len(prefix):]
+        return value
 
     JWT_SECRET_KEY: str
     JWT_ALGORITHM: str = "HS256"
