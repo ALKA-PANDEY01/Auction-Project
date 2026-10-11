@@ -8,17 +8,33 @@ class Settings(BaseSettings):
     @field_validator("DATABASE_URL", mode="before")
     @classmethod
     def normalize_postgres_url(cls, value: str) -> str:
-        if isinstance(value, str):
-            for prefix in (
-                "postgres://",
-                "postgresql://",
-                "postgresql+psycopg://",
-                "postgresql+psycopg2://",
-            ):
-                if value.startswith(prefix):
-                    return "postgresql+asyncpg://" + value[len(prefix):]
-        return value
+        if not isinstance(value, str):
+            return value
 
+        for prefix in (
+            "postgres://",
+            "postgresql://",
+            "postgresql+psycopg://",
+            "postgresql+psycopg2://",
+        ):
+            if value.startswith(prefix):
+                value = "postgresql+asyncpg://" + value[len(prefix):]
+                break
+
+        from sqlalchemy.engine import make_url
+
+        url = make_url(value)
+        if url.drivername.startswith("postgresql"):
+            query = dict(url.query)
+            sslmode = query.pop("sslmode", None)
+            if sslmode is not None:
+                query.setdefault("ssl", sslmode)
+            return url.set(
+                drivername="postgresql+asyncpg",
+                query=query,
+            ).render_as_string(hide_password=False)
+
+        return value
     JWT_SECRET_KEY: str
     JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
