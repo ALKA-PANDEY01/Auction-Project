@@ -1,0 +1,28 @@
+.create-auction-page { --create-ink: #1b2921; --create-green: #244b36; min-height: 100vh; color: var(--create-ink); background: #fbfcfa; font-family: 'DM Sans', sans-serif; }
+.create-header { display: grid; min-height: 73px; grid-template-columns: 1fr 1fr 1fr; align-items: center; padding: 0 clamp(22px, 7vw, 112px); border-bottom: 1px solid #e8eae5; }
+.create-brand { display: inline-flex; align-items: center; gap: 8px; color: var(--create-ink); font-family: 'Manrope', sans-serif; font-size: 19px; font-weight: 700; text-decoration: none; }
+.create-brand span { display: grid; width: 29px; height: 29px; place-items: center; border-radius: 50%; color: #fff; background: var(--create-green); font-size: 15px; }
+.create-back { justify-self: center; color: #718075; font-size: 11px; text-decoration: none; }
+.create-account { display: flex; justify-self: end; align-items: center; gap: 17px; color: #828d85; font-size: 11px; }
+.create-account button { padding: 0; border: 0; color: var(--create-green); background: none; cursor: pointer; font: inherit; font-weight: 700; }
+.create-content { display: grid; max-width: 1060px; grid-template-columns: 0.8fr 1.2fr; gap: clamp(45px, 9vw, 120px); margin: 0 auto; padding: 80px 30px 100px; }
+.create-intro { position: sticky; top: 45px; align-self: start; padding-top: 13px; }
+.create-eyebrow { color: #849183; font-size: 9px; font-weight: 700; letter-spacing: 1.6px; }
+.create-intro h1 { margin: 15px 0; color: #26372b; font-family: 'Manrope', sans-serif; font-size: clamp(32px, 4vw, 48px); font-weight: 600; letter-spacing: -2px; line-height: 1.12; }
+.create-intro h1 em { color: #63805f; font-weight: 500; }
+.create-intro p { max-width: 320px; color: #808c82; font-size: 12px; line-height: 1.8; }
+.create-form { display: grid; gap: 19px; padding: 30px; border: 1px solid #e8eae5; border-radius: 8px; background: #fff; box-shadow: 0 18px 50px rgba(36, 62, 42, 0.04); }
+.create-form label { display: grid; gap: 8px; color: #526156; font-size: 10px; font-weight: 700; }
+.create-form input, .create-form textarea { width: 100%; box-sizing: border-box; padding: 12px 13px; border: 1px solid #dfe5dc; border-radius: 5px; outline: none; color: #26372b; background: #fff; font: 12px 'DM Sans', sans-serif; }
+.create-form input:focus, .create-form textarea:focus { border-color: #749072; box-shadow: 0 0 0 3px rgba(116, 144, 114, 0.12); }
+.create-form textarea { resize: vertical; line-height: 1.6; }
+.create-fields-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.create-form input[type="file"] { padding: 9px; color: #78847a; font-size: 10px; }
+.create-time-hint { margin: -10px 0 0; color: #909a91; font-size: 9px; }
+.create-error { padding: 11px 13px; border: 1px solid #efd4cc; border-radius: 5px; color: #964f43; background: #fff8f5; font-size: 11px; line-height: 1.5; }
+.create-submit { display: flex; min-height: 46px; align-items: center; justify-content: space-between; padding: 0 15px; border: 0; border-radius: 5px; color: #fff; background: var(--create-green); cursor: pointer; font: 600 11px 'DM Sans', sans-serif; }
+.create-submit:hover { background: #193b29; }
+.create-submit:disabled { opacity: 0.65; cursor: wait; }
+.create-submit span { font-size: 17px; }
+.create-footer { display: flex; min-height: 70px; align-items: center; justify-content: space-between; padding: 0 clamp(22px, 7vw, 112px); border-top: 1px solid #e8eae5; color: #939d94; background: #fff; font-size: 9px; }
+@media (max-width: 700px) { .create-header { grid-template-columns: 1fr 1fr; padding-inline: 18px; } .create-back { justify-self: end; } .create-account { display: none; } .create-content { grid-template-columns: 1fr; gap: 28px; padding: 46px 18px 65px; } .create-intro { position: static; } .create-form { padding: 21px; } .create-fields-row { grid-template-columns: 1fr; } .create-footer { padding-inline: 18px; } }

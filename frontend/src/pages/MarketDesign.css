@@ -1,0 +1,249 @@
+/* Warm ivory, deep indigo and saffron bring one visual language to the marketplace. */
+.auction-market {
+  --market-ink: #292c45;
+  --market-green: #263d57;
+  --market-lime: #e8a34b;
+  --market-muted: #6f7180;
+  --market-line: #e9dfd2;
+  color: var(--market-ink);
+  background: #fcf9f3;
+}
+.market-header { border-color: #e9dfd2; background: #fffdf8; }
+.market-brand-mark { color: #fffaf0; background: #d9863e; }
+.market-nav a, .market-greeting { color: #777988; font-size: 14px; }
+.market-account { gap: 22px; }
+.market-signin, .market-register { font-size: 14px; }
+.market-register { border-color: #e7d5bf; border-radius: 999px; }
+.market-register:hover { background: #fff4e4; }
+.market-hero { background: linear-gradient(118deg, #fbf0df 0%, #f2e3d2 55%, #ead7c9 100%); }
+.market-hero::before { border-color: rgba(68, 57, 79, .09); box-shadow: 0 0 0 72px rgba(68, 57, 79, .025), 0 0 0 145px rgba(68, 57, 79, .02); }
+.market-eyebrow, .market-section-kicker { color: #776c67; font-size: 11px; }
+.market-pulse, .filter-live-dot { background: #56856b; }
+.market-hero h1 { color: #292c45; }
+.market-hero h1 em, .lots-heading h2 em { color: #be7138; }
+.market-hero-copy p { color: #6c6b73; font-size: 16px; }
+.market-hero-link { color: #354861; font-size: 14px; }
+.market-hero-link span { border-color: #c9aa8e; }
+.art-sun { background: #e6b16e; }
+.art-pedestal { background: linear-gradient(180deg, #e0c6a9, #c6a98d); }
+.art-vase { background: linear-gradient(105deg, #985b46 0%, #ca8a63 27%, #a65f49 57%, #734b49 100%); box-shadow: 23px 18px 35px rgba(68, 45, 44, .18), inset -12px 0 20px rgba(42, 35, 40, .2), inset 8px 1px 17px rgba(255, 228, 193, .22); }
+.art-vase::before { background: linear-gradient(90deg, #895545, #d09468 50%, #895545); }
+.art-vase::after { background: #69443f; }
+.art-caption, .market-hero-index { color: #786b64; font-size: 10px; }
+.market-lots { padding-top: 82px; }
+.lots-heading h2 { color: #292c45; }
+.lot-search { height: 48px; border-color: #e6dbce; border-radius: 10px; background: #fffefb; }
+.lot-search input { font-size: 14px; }
+.lot-controls { border-color: #e9dfd2; }
+.lot-filters { gap: 28px; }
+.lot-filter { color: #787987; font-size: 14px; }
+.lot-filter:hover, .lot-filter.is-selected { border-bottom-color: #c47a3d; color: #354861; }
+.lot-count { color: #777987; font-size: 12px; }
+.lot-grid { gap: 26px; padding-top: 32px; }
+.lot-card { border-color: #eadfD2; border-radius: 16px; background: #fffefb; box-shadow: 0 4px 18px rgba(58, 49, 43, .045); }
+.lot-card:hover { transform: translateY(-6px); box-shadow: 0 18px 40px rgba(58, 49, 43, .12); }
+.lot-image { height: 252px; background: linear-gradient(145deg, #f1e4d3, #e8d6c1); }
+.lot-image-tone-1 { background: linear-gradient(145deg, #eee8d8, #dfd6bd); }
+.lot-image-tone-2 { background: linear-gradient(145deg, #f0e2dc, #e5cfc4); }
+.lot-image-tone-3 { background: linear-gradient(145deg, #e2e9df, #cddacc); }
+.lot-image-initial { color: rgba(55, 60, 80, .28); }
+.lot-status { top: 15px; left: 15px; gap: 8px; padding: 9px 12px; border: 0; border-radius: 999px; color: #535768; background: rgba(255, 253, 248, .94); font-size: 12px; }
+.lot-status.status-active { color: #28583f; background: #eff7eb; }
+.lot-status.status-scheduled { color: #81551f; background: #fff2d8; }
+.lot-status.status-ended { color: #676b78; background: #f1f0ee; }
+.lot-status.status-cancelled { color: #954f48; background: #fbebe6; }
+.lot-card-arrow { right: 15px; bottom: 15px; width: 37px; height: 37px; color: #fff; background: #354861; font-size: 19px; }
+.lot-card-body { padding: 21px 21px 19px; }
+.lot-card-title-row h3 { color: #292c45; font-size: 18px; letter-spacing: -.45px; }
+.lot-number { color: #89838a; font-size: 10px; }
+.lot-description { min-height: 42px; margin-top: 9px; color: #737580; font-size: 13px; line-height: 1.65; }
+.lot-card-meta { margin-top: 17px; padding-top: 15px; border-color: #eee6dc; }
+.lot-card-meta div { gap: 7px; }
+.lot-card-meta span { color: #767987; font-size: 11px; }
+.lot-card-meta strong { color: #2f4f45; font-size: 17px; }
+.lot-time strong { color: #555d6c; font-size: 12px; }
+.market-message { color: #727481; font-size: 14px; }
+.market-footer { border-color: #e9dfd2; color: #777987; background: #fffdf8; font-size: 11px; }
+
+.auction-detail-page { --detail-ink: #292c45; --detail-green: #354861; --detail-muted: #747684; --detail-line: #e9dfd2; color: var(--detail-ink); background: #fcf9f3; }
+.detail-header, .detail-footer { border-color: #e9dfd2; background: #fffdf8; }
+.detail-back-link, .detail-account { color: #727582; font-size: 13px; }
+.detail-account button { color: #354861; }
+.detail-breadcrumb { color: #777987; font-size: 12px; }
+.detail-breadcrumb a { color: #a45f37; }
+.detail-image-stage { border-radius: 16px; background: linear-gradient(145deg, #f1e4d3, #e5d3be); }
+.detail-image-placeholder { color: rgba(55, 60, 80, .3); }
+.detail-image-placeholder small { color: #756b66; font-size: 10px; }
+.detail-status { padding: 10px 13px; border-radius: 999px; font-size: 12px; }
+.detail-status-active { color: #28583f; background: #eff7eb; }
+.detail-status-scheduled { color: #81551f; background: #fff2d8; }
+.detail-status-ended { color: #676b78; background: #f1f0ee; }
+.detail-image-count, .detail-image-note { color: #6f7079; font-size: 11px; }
+.detail-eyebrow { color: #776c67; font-size: 10px; }
+.detail-information h1 { color: #292c45; }
+.detail-description { color: #6f7180; font-size: 15px; }
+.detail-price-block { border-color: #e9dfd2; }
+.detail-price-block > span { color: #6f7180; font-size: 10px; }
+.detail-price-block > strong { color: #a75f35; font-size: 38px; }
+.detail-price-block > small { color: #737580; font-size: 12px; }
+.detail-facts span { color: #737580; font-size: 12px; }
+.detail-facts strong { color: #3d4657; font-size: 14px; }
+.detail-next-step { border-color: #dbe8d8; color: #28583f; background: #f0f7ec; font-size: 13px; }
+.detail-next-step > span:last-child { color: #68766c; font-size: 11px; }
+.detail-ended-note { border-color: #e7dfd5; color: #676b78; background: #f4f0eb; }
+.detail-scheduled-note { border-color: #efdfbf; color: #81551f; background: #fff6e5; }
+.detail-seller-note p { color: #70737e; font-size: 12px; }
+.detail-seller-note strong { color: #354861; font-size: 13px; }
+.history-heading h2 { color: #292c45; }
+.history-order { color: #777987; font-size: 10px; }
+.history-empty { color: #70737e; font-size: 13px; }
+.history-list li { border-color: #eee6dc; }
+.history-number, .history-bid-label, .history-list time { color: #6f7180; font-size: 12px; }
+.history-list strong { color: #a75f35; font-size: 16px; }
+.detail-footer { color: #777987; font-size: 11px; }
+.detail-bid-form { display: grid; gap: 11px; margin-top: 16px; padding: 18px; border: 1px solid #ead9c1; border-radius: 14px; background: #fff8ed; }
+.detail-bid-form > label { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; color: #343b52; font-size: 14px; font-weight: 800; }
+.detail-bid-form > label span { color: #755f4e; font-size: 12px; font-weight: 600; }
+.detail-bid-controls { display: flex; min-height: 48px; align-items: center; overflow: hidden; border: 1px solid #e4d3bd; border-radius: 9px; background: #fffefa; }
+.detail-bid-controls > span { padding-left: 14px; color: #9a542f; font-size: 17px; font-weight: 800; }
+.detail-bid-controls input { width: 100%; min-width: 0; height: 46px; padding: 0 12px; border: 0; outline: 0; color: #292c45; background: transparent; font: 700 16px 'DM Sans', sans-serif; }
+.detail-bid-controls button { align-self: stretch; padding: 0 19px; border: 0; color: #fffaf2; background: #354861; cursor: pointer; font: 800 13px 'DM Sans', sans-serif; white-space: nowrap; }
+.detail-bid-controls button:hover:not(:disabled) { background: #26364c; }
+.detail-bid-controls button:disabled { opacity: .55; cursor: not-allowed; }
+.detail-bid-error { margin: 0; color: #984f43; font-size: 13px; font-weight: 650; line-height: 1.5; }
+.detail-bid-note { margin: 12px 0 0; color: #735d4a; font-size: 13px; font-weight: 600; }
+.seller-auction-controls { display: grid; gap: 10px; }
+.detail-end-auction-button { justify-self: start; padding: 12px 17px; border: 1px solid #d8a390; border-radius: 999px; color: #873f34; background: #fff2ec; cursor: pointer; font: 800 13px 'DM Sans', sans-serif; }
+.detail-end-auction-button:hover:not(:disabled) { border-color: #bc7560; background: #ffe5da; }
+.detail-end-auction-button:disabled { opacity: .6; cursor: wait; }
+.detail-ended-actions { display: grid; gap: 10px; }
+.detail-result-link { display: inline-flex; align-items: center; justify-content: space-between; padding: 13px 15px; border: 1px solid #e8c29a; border-radius: 9px; color: #774425; background: #fff4e4; font-size: 14px; font-weight: 800; text-decoration: none; }
+.detail-result-link:hover { border-color: #d9863e; background: #ffecd2; }
+
+.create-auction-page { --create-ink: #292c45; --create-green: #354861; color: #292c45; background: #fcf9f3; }
+.create-header, .create-footer { border-color: #e9dfd2; background: #fffdf8; }
+.create-brand span { background: #d9863e; }
+.create-back, .create-account { color: #727582; font-size: 13px; }
+.create-account button { color: #354861; }
+.create-eyebrow { color: #776c67; font-size: 11px; }
+.create-intro h1 { color: #292c45; }
+.create-intro h1 em { color: #be7138; }
+.create-intro p { color: #6f7180; font-size: 15px; }
+.create-form { gap: 21px; border-color: #eadfD2; border-radius: 16px; background: #fffefb; box-shadow: 0 12px 34px rgba(58, 49, 43, .06); }
+.create-form label { color: #444a5c; font-size: 13px; }
+.create-form input, .create-form textarea, .create-form select { border-color: #e4d9cc; border-radius: 8px; color: #292c45; background: #fffefa; font: 500 15px 'DM Sans', sans-serif; }
+.create-form input:focus, .create-form textarea:focus, .create-form select:focus { border-color: #d18a4b; box-shadow: 0 0 0 3px rgba(209, 138, 75, .14); }
+.create-form input[type="file"] { font-size: 12px; }
+.create-time-hint { color: #737580; font-size: 11px; }
+.create-submit { border-radius: 999px; color: #fffaf2; background: #354861; font-size: 14px; }
+.create-submit:hover { background: #26364c; }
+.create-footer { color: #777987; font-size: 11px; }
+
+@media (max-width: 700px) {
+  .market-hero-copy p, .create-intro p { font-size: 14px; }
+  .lot-filters { gap: 20px; }
+  .lot-filter { font-size: 13px; }
+  .lot-card-title-row h3 { font-size: 17px; }
+  .lot-image { height: 245px; }
+  .detail-description { font-size: 14px; }
+  .history-list time { font-size: 10px; }
+}
+
+/* Stronger type hierarchy and a more editorial auction card. */
+.market-brand { font-weight: 800; }
+.market-nav a, .market-greeting, .market-signin, .market-register { font-weight: 650; }
+.market-hero h1 { font-weight: 750; }
+.market-hero-copy p { font-size: 17px; font-weight: 500; }
+.market-hero-link { font-size: 15px; font-weight: 750; }
+.market-section-kicker, .market-eyebrow { font-weight: 800; }
+.lots-heading h2 { font-weight: 750; }
+.lot-search input { font-size: 14px; font-weight: 500; }
+.lot-filter { font-size: 14px; font-weight: 600; }
+.lot-filter.is-selected { font-weight: 800; }
+.lot-count { font-size: 13px; font-weight: 600; }
+.lot-grid { grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); gap: 28px; }
+.lot-card { display: flex; flex-direction: column; border: 1px solid #e8d9c7; border-radius: 19px; box-shadow: 0 7px 22px rgba(48, 48, 65, .07); }
+.lot-card:hover { border-color: #d8b58f; box-shadow: 0 20px 44px rgba(48, 48, 65, .14); }
+.lot-image { height: 270px; }
+.lot-image img { transition: transform 350ms cubic-bezier(.2,.8,.2,1); }
+.lot-card:hover .lot-image img { transform: scale(1.055); }
+.lot-status { font-weight: 750; box-shadow: 0 3px 12px rgba(45, 43, 48, .08); }
+.lot-card-body { display: flex; flex: 1; flex-direction: column; padding: 22px 22px 20px; }
+.lot-card-title-row h3 { font-size: 19px; font-weight: 800; line-height: 1.35; }
+.lot-description { min-height: 44px; color: #686b79; font-size: 14px; font-weight: 500; }
+.lot-card-meta { align-items: stretch; margin-top: auto; padding-top: 18px; }
+.lot-card-meta div:first-child { min-width: 125px; padding: 11px 13px; border-radius: 11px; background: #f8f0e4; }
+.lot-card-meta span { color: #656a79; font-size: 12px; font-weight: 650; }
+.lot-card-meta strong { color: #9a542f; font-size: 19px; font-weight: 800; }
+.lot-time { justify-content: center; }
+.lot-time strong { color: #444c61; font-size: 13px; font-weight: 700; }
+
+.detail-back-link, .detail-account, .detail-breadcrumb { font-weight: 600; }
+.detail-image-note { font-size: 12px; font-weight: 500; }
+.detail-eyebrow { font-size: 11px; font-weight: 800; }
+.detail-information h1 { font-weight: 800; }
+.detail-description { font-size: 16px; font-weight: 500; }
+.detail-price-block > span { font-size: 11px; font-weight: 800; }
+.detail-price-block > strong { font-weight: 800; }
+.detail-price-block > small { font-size: 13px; font-weight: 500; }
+.detail-facts span { font-size: 13px; font-weight: 600; }
+.detail-facts strong { font-size: 15px; font-weight: 700; }
+.detail-next-step { font-size: 14px; font-weight: 750; }
+.detail-next-step > span:last-child { font-size: 12px; font-weight: 600; }
+.detail-seller-note p { font-size: 13px; font-weight: 500; }
+.detail-seller-note strong { font-size: 14px; font-weight: 800; }
+.history-heading h2 { font-weight: 750; }
+.history-order { font-size: 11px; font-weight: 800; }
+.history-number, .history-bid-label, .history-list time { font-size: 13px; font-weight: 600; }
+.history-list strong { font-size: 17px; font-weight: 800; }
+
+.create-intro h1 { font-weight: 800; }
+.create-intro p { font-weight: 500; }
+.create-form label { font-size: 14px; font-weight: 750; }
+.create-form input, .create-form textarea { font-size: 15px; font-weight: 500; }
+.create-time-hint { font-size: 12px; font-weight: 500; }
+.create-submit { font-size: 15px; font-weight: 800; }
+
+.market-nav { gap: 32px; }
+.market-nav a { color: #4d5267; font-size: 15px; font-weight: 750; transition: color 160ms ease; }
+.market-nav a:hover { color: #a85e30; }
+.market-nav .market-nav-active { color: #29324b; font-weight: 850; }
+.market-nav .market-nav-active::after { height: 3px; border-radius: 3px 3px 0 0; background: #d9863e; }
+.market-signin { font-size: 15px; font-weight: 800; }
+.market-account > a.market-signin[href="/auctions/create"] { padding: 10px 15px; border: 1px solid #e8c29a; border-radius: 999px; color: #774425; background: #fff4e4; }
+.market-account > a.market-signin[href="/auctions/create"]:hover { border-color: #d9863e; background: #ffecd2; }
+
+/* Wishlist actions stay separate from the auction detail link. */
+.lot-card-body-link { min-height: 225px; color: inherit; text-decoration: none; }
+.lot-card-body-link:focus-visible, .wishlist-card-link:focus-visible { outline: 3px solid #d9863e; outline-offset: -3px; }
+.lot-card > .wishlist-toggle { align-self: flex-start; margin: 0 22px 20px; }
+.wishlist-toggle, .detail-wishlist-toggle { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 10px 15px; border: 1px solid #e8c29a; border-radius: 999px; color: #774425; background: #fff4e4; cursor: pointer; font: 800 13px 'DM Sans', sans-serif; transition: background 160ms ease, border-color 160ms ease, transform 160ms ease; }
+.wishlist-toggle > span { color: #a85e30; font-size: 18px; line-height: 1; }
+.wishlist-toggle:hover:not(:disabled), .detail-wishlist-toggle:hover:not(:disabled) { transform: translateY(-1px); border-color: #d9863e; background: #ffecd2; }
+.wishlist-toggle.is-saved, .detail-wishlist-toggle.is-saved { border-color: #cf9c72; color: #fffaf2; background: #a85e30; }
+.wishlist-toggle.is-saved > span { color: #fffaf2; }
+.wishlist-toggle:disabled, .detail-wishlist-toggle:disabled { opacity: .6; cursor: wait; }
+.wishlist-inline-error { margin: 15px 0 0; padding: 11px 14px; border: 1px solid #efd4cc; border-radius: 8px; color: #984f43; background: #fff8f5; font-size: 13px; font-weight: 650; }
+.detail-image-stage { position: relative; }
+.detail-wishlist-toggle { position: absolute; top: 16px; right: 16px; z-index: 1; box-shadow: 0 4px 16px rgba(45, 43, 48, .12); }
+.detail-wishlist-toggle.is-saved { background: #a85e30; }
+.wishlist-card-link { flex: 1; }
+
+@media (max-width: 700px) {
+  .lot-card-body-link { min-height: 215px; }
+  .lot-card > .wishlist-toggle { margin-left: 18px; }
+  .detail-wishlist-toggle { top: 11px; right: 11px; padding: 9px 12px; font-size: 12px; }
+}
+
+@media (max-width: 700px) {
+  .lot-grid { grid-template-columns: 1fr; }
+  .lot-image { height: 250px; }
+  .lot-card-title-row h3 { font-size: 18px; }
+  .detail-description { font-size: 15px; }
+}
+
+.category-filters { display: flex; gap: 9px; overflow-x: auto; padding: 16px 0 4px; scrollbar-width: thin; }
+.category-filter { flex: 0 0 auto; padding: 8px 13px; border: 1px solid #e5d8c8; border-radius: 999px; color: #656a79; background: #fffdf8; cursor: pointer; font: 700 12px 'DM Sans', sans-serif; transition: color 150ms ease, background 150ms ease, border-color 150ms ease; }
+.category-filter:hover, .category-filter.is-selected { border-color: #c47a3d; color: #fffaf2; background: #354861; }
+.lot-category-badge { position: absolute; top: 15px; right: 15px; padding: 8px 11px; border: 1px solid rgba(255, 255, 255, .8); border-radius: 999px; color: #4d5267; background: rgba(255, 253, 248, .94); box-shadow: 0 3px 12px rgba(45, 43, 48, .08); font-size: 11px; font-weight: 800; }
+.detail-category-label { display: inline-flex; margin: 0 8px 0 0; padding: 5px 9px; border-radius: 999px; color: #774425; background: #fff0dc; font-size: 10px; font-weight: 850; text-transform: uppercase; letter-spacing: .5px; }

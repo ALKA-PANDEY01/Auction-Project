@@ -1,0 +1,40 @@
+/* Give regular copy a stronger weight across every route while preserving the existing palette. */
+#root {
+  font-weight: 600;
+}
+
+#root :is(h1, h2, h3, h4) {
+  font-weight: 800;
+}
+
+#root :is(p, li, time) {
+  font-weight: 600;
+}
+
+#root :is(input, textarea, select) {
+  font-weight: 600;
+}
+
+#root label {
+  font-weight: 750;
+}
+
+#root :is(
+  .market-hero-copy p,
+  .lot-description,
+  .detail-description,
+  .detail-image-note,
+  .detail-price-block > small,
+  .detail-next-step > span:last-child,
+  .detail-seller-note p,
+  .create-intro p,
+  .create-time-hint,
+  .seller-dashboard-heading p,
+  .wishlist-content .lots-heading p
+) {
+  font-weight: 600;
+}
+
+#root .create-intro h1 em {
+  font-weight: 700;
+}
