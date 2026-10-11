@@ -1,7 +1,10 @@
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.core.database import check_database_connection
+from app.core.database import check_database_connection, engine
+from app.models import Base
 from app.routers.auth import router as auth_router
 from app.routers.auction import router as auction_router
 from app.routers.bid import router as bid_router
@@ -12,9 +15,16 @@ from app.routers.notification_ws import router as notification_ws_router
 from app.routers.payment import router as payment_router
 
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    async with engine.begin() as connection:
+        await connection.run_sync(Base.metadata.create_all)
+    yield
+
 app = FastAPI(
     title="Real-Time Auction Platform",
     version="1.0.0",
+    lifespan=lifespan,
 )
 
 app.add_middleware(
