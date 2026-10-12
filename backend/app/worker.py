@@ -1,13 +1,12 @@
-import os
 import uuid
 import json
 from datetime import datetime, timezone
 
-from arq.connections import RedisSettings
 from redis.exceptions import RedisError
 from sqlalchemy import select
 from sqlalchemy.dialects.postgresql import insert
 
+from app.core.arq import redis_settings as shared_redis_settings
 from app.core.database import AsyncSessionLocal
 from app.core.notification_events import add_auction_winner_notification, publish_notification
 from app.models.auction import Auction, AuctionStatus
@@ -161,7 +160,4 @@ class WorkerSettings:
         activate_auction,
         end_auction,
     ]
-    redis_settings = RedisSettings(
-        host=os.getenv("REDIS_HOST", "localhost"),
-        port=6379,
-    )
+    redis_settings = shared_redis_settings
