@@ -82,8 +82,8 @@ async def login(
         key="access_token",
         value=access_token,
         httponly=True,
-        secure=False,
-        samesite="lax",
+        secure=True,
+        samesite="none",
         max_age=60 * 60,
     )
 
@@ -147,6 +147,8 @@ async def get_me(
 async def logout(response: Response):
     response.delete_cookie(
         key="access_token",
+        secure=True,
+        samesite="none",
     )
 
     return {
